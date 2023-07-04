@@ -1,0 +1,145 @@
+.body {
+  margin-top: 60px;
+  background-color: rgb(21, 91, 152);
+  display: contents;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: white;
+  margin: 5px 636px;
+}
+
+.pricing {
+  display: flex;
+  justify-content: center;
+}
+
+.hr {
+  color: red;
+}
+
+.basic-cost,
+.professional-cost,
+.master-cost {
+  font-family: "Montserrat ", serif;
+  font-weight: 700;
+  font-size: 68px;
+}
+
+.basic,
+.professional,
+.master {
+  text-align: center;
+}
+/* SWITCH */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.switch-box {
+  display: flex;
+  justify-content: center;
+}
+
+.switch-left {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  margin-right: 26px;
+}
+
+.switch-right {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  margin-left: 26px;
+}
+
+.information {
+  text-align: center;
+}
+
+.container-a {
+  background-color: antiquewhite;
+  padding: 56px;
+  border-radius: 26px;
+}
+
+.container-a:hover,
+.container-b:hover,
+.container-c:hover {
+  background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  transition: transform 0.6s;
+  transform: scale(1.1);
+  color: white;
+}
+
+.container-b {
+  background-color: yellowgreen;
+  padding: 54px;
+  border-radius: 26px;
+}
+
+.container-c {
+  background-color: rgb(114, 163, 204);
+  padding: 54px;
+  border-radius: 26px;
+}
